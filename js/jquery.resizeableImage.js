@@ -61,14 +61,14 @@ var resizeableImage = function(image_target) {
 	
 	// This is a fix for mobile safari
 	// For some reason it does not allow a direct copy of the touches property
-	if(typeof e.originalEvent.touches !== 'undefined'){
+	/*if(typeof e.originalEvent.touches !== 'undefined'){
 		event_state.touches = [];
 		$.each(e.originalEvent.touches, function(i, ob){
 		  event_state.touches[i] = {};
 		  event_state.touches[i].clientX = 0+ob.clientX;
 		  event_state.touches[i].clientY = 0+ob.clientY;
 		});
-	}
+	}*/
     event_state.evnt = e;
   };
 
