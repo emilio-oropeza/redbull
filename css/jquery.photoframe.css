@@ -1,0 +1,38 @@
+.photoframe{
+	border-style : solid;
+	border-color : #000;
+	border-width : 1px;
+	
+}
+
+.photoframe input{
+	display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    cursor : pointer;
+}
+
+.outside {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.component {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    top: 0px;
+    margin: auto;
+    width: 800px;
+    height: 800px;
+    background: transparent url("../test/img/gridme.png") repeat scroll center center;
+    overflow: hidden;
+}

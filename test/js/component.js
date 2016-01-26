@@ -9,9 +9,9 @@ var resizeableImage = function(image_target) {
       image_target = $(image_target).get(0),
       event_state = {},
       constrain = false,
-      min_width = 60, // Change as required
-      min_height = 60,
-      max_width = 800, // Change as required
+      min_width = 200, // Change as required
+      min_height = 200,
+      max_width = 900, // Change as required
       max_height = 900,
       resize_canvas = document.createElement('canvas');
 
@@ -190,11 +190,27 @@ var resizeableImage = function(image_target) {
     crop_canvas.height = height;
     
     crop_canvas.getContext('2d').drawImage(image_target, left, top, width, height, 0, 0, width, height);
-    window.open(crop_canvas.toDataURL("image/png"));
+    $('<img src="'+crop_canvas.toDataURL("image/png")+'" />').appendTo("body");
+    //window.open(crop_canvas.toDataURL("image/png"));
   }
 
   init();
 };
 
 // Kick everything off with the target image
-resizeableImage($('.resize-image'));
+//resizeableImage($('.resize-image'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
