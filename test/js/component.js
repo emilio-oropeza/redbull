@@ -198,7 +198,7 @@ var resizeableImage = function(image_target) {
 };
 
 // Kick everything off with the target image
-//resizeableImage($('.resize-image'));
+resizeableImage($('.resize-image'));
 
 
 
