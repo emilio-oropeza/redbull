@@ -24,8 +24,8 @@
 
 .component {
     position: absolute;
-    width: 800px;
-    height: 800px;
+    width: 320px;
+	height: 320px;
     right: 0px;
     bottom: 0px;
     left: 0px;
